@@ -13,4 +13,11 @@ public class TrainTest {
 
         assertThat(train.getHoursDelayed()).isEqualTo(2);
     }
+
+    @Test
+    public void customerSatisfaction_given0HoursOfDelay_thenNice() {
+        Train train = new Train(0);
+
+        assertThat(train.customerSatisfaction()).isEqualTo("Nice...");
+    }
 }

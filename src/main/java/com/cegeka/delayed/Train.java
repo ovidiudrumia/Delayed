@@ -11,7 +11,7 @@ public class Train {
         return hoursDelayed;
     }
 
-    public void setHoursDelayed(int hoursDelayed) {
-        this.hoursDelayed = hoursDelayed;
+    public String customerSatisfaction() {
+        return "Nice...";
     }
 }
