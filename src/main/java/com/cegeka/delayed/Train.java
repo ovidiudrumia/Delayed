@@ -16,8 +16,10 @@ public class Train {
             return "Nice...";
         } else if (hoursDelayed == 1) {
             return "Ah well...";
-        } else {
+        } else if(hoursDelayed == 2){
             return "Annoying...";
+        } else {
+            return "Burn it!";
         }
     }
 }

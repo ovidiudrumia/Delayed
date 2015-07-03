@@ -34,4 +34,11 @@ public class TrainTest {
         assertThat(train.customerSatisfaction()).isEqualTo("Annoying...");
     }
 
+    @Test
+    public void customerSatisfaction_given3HoursOfDelay_thenBurnIt() {
+        Train train = new Train(3);
+
+        assertThat(train.customerSatisfaction()).isEqualTo("Burn it!");
+    }
+
 }
