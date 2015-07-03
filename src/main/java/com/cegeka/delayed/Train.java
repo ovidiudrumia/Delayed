@@ -18,8 +18,10 @@ public class Train {
             return "Ah well...";
         } else if(hoursDelayed == 2){
             return "Annoying...";
-        } else {
+        } else if(hoursDelayed == 3) {
             return "Burn it!";
+        } else {
+            throw new RuntimeException();
         }
     }
 }

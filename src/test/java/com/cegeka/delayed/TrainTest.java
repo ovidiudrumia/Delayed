@@ -41,4 +41,10 @@ public class TrainTest {
         assertThat(train.customerSatisfaction()).isEqualTo("Burn it!");
     }
 
+    @Test(expected = RuntimeException.class)
+    public void customerSatisfaction_givenMoreThan3HoursOfDelay_thenWorldExplodes() {
+        Train train = new Train(4);
+
+        train.customerSatisfaction();
+    }
 }
