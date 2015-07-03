@@ -1,6 +1,5 @@
 package com.cegeka.delayed;
 
-import com.cegeka.delayed.Train;
 import org.junit.Test;
 
 import static org.fest.assertions.Assertions.assertThat;
@@ -20,4 +19,12 @@ public class TrainTest {
 
         assertThat(train.customerSatisfaction()).isEqualTo("Nice...");
     }
+
+    @Test
+    public void customerSatisfaction_given1HourOfDelay_thenAhWell() {
+        Train train = new Train(1);
+
+        assertThat(train.customerSatisfaction()).isEqualTo("Ah well...");
+    }
+
 }

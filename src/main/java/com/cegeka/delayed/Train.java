@@ -12,6 +12,10 @@ public class Train {
     }
 
     public String customerSatisfaction() {
-        return "Nice...";
+        if(hoursDelayed == 0) {
+            return "Nice...";
+        } else {
+            return "Ah well...";
+        }
     }
 }
